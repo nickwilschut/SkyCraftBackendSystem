@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Tabelstructuur voor tabel `medewerkers`
 --
 
-CREATE TABLE IF NOT EXISTS `employees` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
   `name` varchar(60) NOT NULL,
   `age` tinyint(3) unsigned NOT NULL
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 -- Gegevens worden geëxporteerd voor tabel `medewerkers`
 --
 
-INSERT INTO `employees` (`id`, `name`, `age`) VALUES
+INSERT INTO `users` (`id`, `name`, `age`) VALUES
 (1, 'Karel', 12),
 (2, 'Martijn', 17),
 (3, 'Kees', 53),
@@ -50,7 +50,7 @@ INSERT INTO `employees` (`id`, `name`, `age`) VALUES
 --
 -- Indexen voor tabel `medewerkers`
 --
-ALTER TABLE `employees`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -60,7 +60,7 @@ ALTER TABLE `employees`
 --
 -- AUTO_INCREMENT voor een tabel `medewerkers`
 --
-ALTER TABLE `employees`
+ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
